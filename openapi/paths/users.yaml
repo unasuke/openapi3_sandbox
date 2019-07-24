@@ -1,0 +1,18 @@
+get:
+  summary: Get user
+  description: Get user as json
+  parameters:
+    - name: user_id
+      in: path
+      description: user_id (uuid v4)
+      required: true
+      type: string
+      format: string
+  responses:
+    200:
+      description: ok
+      content:
+        application/json:
+          schema:
+            # $ref: '#/components/schemas/user'
+            $ref: '../components/user.yaml'

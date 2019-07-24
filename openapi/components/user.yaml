@@ -1,0 +1,11 @@
+# schemas:
+#   User:
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: 'uuid v4で表現されるユーザーのprimary key'
+  name:
+    type: string
+    format: string

@@ -1,0 +1,11 @@
+openapi: 3.0.2
+info:
+  title: sandbox
+  description: my sandbox specification
+  version: 0.0.1
+servers:
+  - url: http://api.example.com
+    description: server
+paths:
+  /users/{user_id}:
+    $ref: 'openapi/paths/users.yaml'
